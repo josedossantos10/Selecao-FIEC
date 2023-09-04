@@ -1,0 +1,28 @@
+1) Auto avaliação
+Tópicos de Conhecimento:
+• Manipulação e tratamento de dados com Python: 6
+• Manipulação e tratamento de dados com Pyspark: 3
+• Desenvolvimento de data workflows em Ambiente Azure com databricks: 1
+• Desenvolvimento de data workflows com Airflow: 4
+• Manipulação de bases de dados NoSQL: 3
+• Web crawling e web scraping para mineração de dados: 5
+• Construção de APIs: REST, SOAP e Microservices: 5
+
+2) Desenvolvimento de pipelines de ETL de dados com Python, Apache Airflow, Hadoop
+e Spark.
+a) Por se tratar de um geração de relatórios em Power Bi, eu prezaria pela maior integridade dos dados e 
+utilizaria um Banco de Dados relacional, fazendo o uso do esquema estrela que traz consultas mais rápidas
+para a geração dos dashboards.
+
+b) No arquivo "Resposta_2b.py"
+
+c)
+  'select "Ceará" Localização, count(IDAtracacao) "Número de Atracações", avg(TEsperaAtracacao) "Tempo de espera médio", avg(TAtracado) "Tempo atracado médio", Mes, Ano from dd where SGUF like "CE" and Ano >=2018 and Ano <=2019 group by Ano, Mes union '+
+  'select "Nordeste" Localização, count(IDAtracacao) "Número de Atracações", avg(TEsperaAtracacao) "Tempo de espera médio", avg(TAtracado) "Tempo atracado médio", Mes, Ano from dd where "Região Geográfica" like "Nordeste" and Ano >=2018 and Ano <=2019 group by Ano, Mes union '+
+  'select "Brasil" Localização, count(IDAtracacao) "Número de Atracações", avg(TEsperaAtracacao) "Tempo de espera médio", avg(TAtracado) "Tempo atracado médio", Mes, Ano from dd where Ano >=2018 and Ano <=2019 group by Ano, Mes order by Ano, Mes,"Número de Atracações"'
+
+3) Na pasta "Resposta_3"
+
+4) Na pasta "Resposta_4"
+
+5) no arquivo "k8s.yaml"
